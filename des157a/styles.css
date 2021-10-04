@@ -12,15 +12,60 @@
     margin: auto;
 }
 
+.lights{
+    position: absolute;
+    top: -15px;
+    left: 200px;
+    filter: sepia(0%);
+}
+
+/* animation on lights? */
+.lights:hover{
+    cursor: pointer;
+    animation: light 3s ease-in-out infinite alternate;
+    filter: sepia(100%);
+}
+
+
+
+.bee{
+    position: absolute;
+    right: 20px;
+    top: -100px;
+    animation: beean 10s ease infinite alternate;
+}
+
+
+@keyframes beean{
+    0%{
+        transform: scaleX(-1);
+        right: 300px;
+        top: -100px;
+    }
+    33%{
+        right: 20px;
+        top: 10px;
+    }
+    75% {
+       transform: scaleX(-1);
+       right: 20px;
+       top: 10px;
+    }
+    100%{
+        right: 0px;
+        top: 0;
+    }
+}
 
 .vine{
     position: absolute;
     left: 0px;
     top: -15px;
+    transform-origin: top;
     transform:matrix(1.00,0.00,0,1.00,0,0);
     animation-name: vine;
     animation-timing-function: ease-in-out;
-    animation-duration: 4s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     
