@@ -1,5 +1,5 @@
 .container{
-    background: url(images/Artboard\ 1.png);
+    background: url(images/background1.png);
     max-width: 1366px;
     min-width: 900px;
     margin: auto;
@@ -16,16 +16,13 @@
     position: absolute;
     top: -15px;
     left: 200px;
-    filter: sepia(0%);
+    filter: sepia(100%);
+    z-index: 1;
 }
+
+
 
 /* animation on lights? */
-.lights:hover{
-    cursor: pointer;
-    animation: light 3s ease-in-out infinite alternate;
-    filter: sepia(100%);
-}
-
 
 
 .bee{
