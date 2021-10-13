@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2- Functions and DOM</title>
+
+    <style>
+
+        h1{
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Background</h1>
+    <h2 id="try">some text</h2>
+
+    <script>
+        var color = prompt("What is your favorite color from red, blue, yellow, green,brown, white?)", "");
+        
+        function background(color){
+
+            var backg;
+
+            if(color == null || color == ""){
+                backg="You did not provide a color";
+                document.getElementById("try").innerHTML="You did not provide a color :(";
+            } else if(color === "red" || color === "blue" || color === "yellow"||color === "green"|| color === "brown" || color === "white"){
+                document.body.style.backgroundColor = color;
+                backg = `you chose the color ${color}`;
+                document.getElementById("try").innerHTML="";
+            } else{
+                document.getElementById("try").innerHTML="You did not choose from a color provided";
+                backg= "You did not choose from a color provided"
+            }
+
+            return backg;
+            return color;
+
+        }
+
+        console.log(background(color));
+
+
+    </script>
+</body>
+</html>
