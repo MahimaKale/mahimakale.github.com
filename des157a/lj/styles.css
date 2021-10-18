@@ -1,0 +1,63 @@
+.container{
+    background-image: url(images/bg.jpeg);
+    max-width: 1366px;
+    min-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    background-color: white;
+    margin:  80px 50px;
+    padding: 30px 100px;
+    max-width: 420px;
+    filter: drop-shadow(100%);
+
+}
+
+h1{    
+    font-family: 'Mali', cursive;
+    margin: 150px 150px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(255, 255, 149);
+    max-width:200px ;
+    height: 200px;
+    transform: rotate(-25deg);
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    filter: drop-shadow(100%);
+}
+
+i{
+    position: absolute;
+    top: 75%;
+    left: 41%;
+}
+
+h2, h3{
+    font-family: 'Mali', cursive;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+article p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;    
+    color: rgb(83, 83, 83);
+}
+
+footer{
+    flex: 1 100%;
+    margin: auto;
+    padding: 0 0 20px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+    color:  rgb(250, 250, 204);
+
+}
