@@ -104,7 +104,6 @@ main label{
 label{
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     color: white;
-
 }
 
 input{
@@ -127,3 +126,13 @@ article{
     padding: 50px 120px;
 }
 
+footer{
+    display: flex;
+    margin: 0 200px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+footer a{
+    text-decoration: none;
+}
