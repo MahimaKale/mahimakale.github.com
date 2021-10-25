@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">    <title>Build a Mad Lib Script</title>
+</head>
+<body>
+    <header>
+        <h1>Resolve your Creative Block</h1>
+        <h2>Mad libs</h2>
+    </header>
+   
+    <main>
+        <img src="images/stuck.png" alt="stuck">
+        <form id="myform">
+            <label for="color">What color are you wearing?</label><br>
+            <input type="text" id="color" name="color" placeholder="color" required>
+
+            <br>
+            <label for="bcolor">What color is your backpack?</label><br>
+            <input type="text" id="bcolor" name="bcolor" placeholder="backpack-color" required>
+            
+            <br>
+            <label>Where are you right now?</label>
+            <div id="atmps">
+                <input type="radio" id="outdoors" name="atmps" value="outdoors">
+                <label for="outdoors">Outdoors</label>
+                <input type="radio" id="indoors" name="atmps" value="indoors">
+                <label for="indoors">Indoors</label>
+            </div>
+
+            <label for="inspire">What is something that is inspiring to you?</label><br>
+            <input type="text" id="inspire" name="inspire" placeholder="let your inpiration flow here" required>
+
+            <br>
+            <label for="emotion">What is an emotion you felt strongly in the last 24 hours?</label><br>
+            <input type="text" id="emotion" name="emotion" placeholder="eg: lazy, excited, goofy..." required>
+            
+            <br>
+            <label for="aim">What would be the impact of your design/artwork on its viewers??</label><br>
+            <input type="text" id="aim" name="aim" placeholder="Aim big" required>
+            
+        
+            <br>
+            <label>Think about your viewers and whattone would be appropriate for them?
+            </label>
+            <div id="tone">
+                <input type="radio" id="formal" name="tone" value="formal">
+                <label for="formal">Formal</label>
+                <input type="radio" id="informal" name="tone" value="informal">
+                <label for="informal">Informal</label>
+            </div>
+
+            <br>
+            <div class="open">
+                <input type="submit" value="Send" >
+            </div>
+            
+
+        </form>
+
+        <section id="overlay" class="hidden">
+            <img src="images/unstuck.png" alt="unstuck" id="unstuck">
+            <article id="madlib"></article>   
+            <button class="close">Close</button>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
