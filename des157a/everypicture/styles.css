@@ -44,6 +44,19 @@ div{
     }
 }
 
+#mytext{
+    position: absolute;
+    font-size: 25px;
+    top: 500px;
+    left: 130px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    width: 200px;
+    color: purple;
+    opacity: 0;
+}
+
 #content {
 	/* border: 2px solid #4C4C4C; */
     width: 500px;
@@ -54,6 +67,7 @@ div{
     border-radius: 50%;
 }
 
+
 #content img {
 	position: absolute;
     width: 500px;
@@ -61,12 +75,17 @@ div{
     border-radius: 50%;
 	left: 0;
 	top: 0;
+    transition: 0.5s;
 }
 
 #content img:hover{
     border-radius: 10px;
     width: 510px;
     height: 510px;
+}
+
+#content:hover #mytext{
+    opacity: 1;
 }
 
 #links{
@@ -97,6 +116,8 @@ div{
     font-size: 32px;
 
 }
+
+
 
 
 /* section img{

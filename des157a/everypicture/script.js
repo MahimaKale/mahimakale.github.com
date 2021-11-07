@@ -25,6 +25,13 @@
         'image3.jpg',
         'image4.jpg',
         'image5.jpg'];
+    
+        const mytext = [
+            'Mini Ballerina Present',
+            'Bottled Galaxy',
+            'Charlie the Pumpkin (Oct 14, 2020 to September 6, 2021)',
+            'Keychain that defined my design life',
+            'Potlu the Heart Pine'];
 
     var container = document.getElementById('content');
     var nextBtn = document.getElementById('next');
@@ -40,10 +47,12 @@
 
         var newSlide = document.createElement('img');
         newSlide.src = `images/${myphotos[currentImage]}`;
-        newSlide.className= `fadeinimg${myphotos[currentImage]}`;
+        document.getElementById('mytext').innerHTML= mytext[currentImage];
+        newSlide.className= `fade${myphotos[currentImage]}`;
         container.appendChild(newSlide);
     
-
+        // const image2 = document.querySelector('.fadeimage2');
+        // image2.style.width = "600";
 
         if (container.children.length>2){
             container.removeChild
@@ -59,7 +68,8 @@
 
         var newSlide = document.createElement('img');
         newSlide.src = `images/${myphotos[currentImage]}`;
-        newSlide.className= `fadeinimg${myphotos[currentImage]}`;
+        document.getElementById('mytext').innerHTML= mytext[currentImage];
+        newSlide.className= `fade${myphotos[currentImage]}`;
         container.appendChild(newSlide);
 
         if (container.children.length<2){
