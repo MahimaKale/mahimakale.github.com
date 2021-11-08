@@ -58,7 +58,6 @@ div{
 }
 
 #content {
-	/* border: 2px solid #4C4C4C; */
     width: 500px;
     height: 500px;
     position: absolute;
@@ -117,64 +116,21 @@ div{
 
 }
 
-
-
-
-/* section img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    display: flex;
-    overflow: hidden;
+footer{
     position: absolute;
-    padding: 20px;
+    top: 95%;
+    text-align: center;
+    margin: auto 0 auto 45%;
+    padding: 0 20px;
 }
 
-#myimage2{
-    position: absolute;
-    left: 150px;
-    top: 60px;
-    width: 150px;
-    height: 150px;
+footer a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: purple;
 }
 
-#myimage3{
-    position: absolute;
-    left: 300px;
-    top: 150px;
-    width: 300px;
-    height: 300px;
+footer a:hover{
+    color: rgb(68, 68, 68);
+    font-style: italic;
 }
-
-#myimage4{
-    position: absolute;
-    left: 150px;
-    top: 450px;
-    width: 150px;
-    height: 150px;
-}
-
-#myimage5{
-    position: absolute;
-    left: 20px;
-    top: 600px;
-    width: 100px;
-    height: 100px;
-}
-
-#up{
-    position: absolute;
-    left: 450px;
-    top: 140px;
-}
-
-#down{
-    position: absolute;
-    left: 450px;
-    top: 480px;
-}
-
-#next{
-    background-color: white;
-    padding: 20px;
-} */
