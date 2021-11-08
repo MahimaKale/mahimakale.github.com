@@ -24,14 +24,16 @@
         'image2.jpg',
         'image3.jpg',
         'image4.jpg',
-        'image5.jpg'];
+        'image5.jpg',
+        'image6.jpg'];
     
         const mytext = [
             'Mini Ballerina Present',
             'Bottled Galaxy',
             'Charlie the Pumpkin (Oct 14, 2020 to September 6, 2021)',
             'Keychain that defined my design life',
-            'Potlu the Heart Pine'];
+            'Potlu the Heart Pine',
+             'Little koala rock'];
 
     var container = document.getElementById('content');
     var nextBtn = document.getElementById('next');
