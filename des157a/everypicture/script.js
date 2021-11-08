@@ -33,7 +33,7 @@
             'Charlie the Pumpkin (Oct 14, 2020 to September 6, 2021)',
             'Keychain that defined my design life',
             'Potlu the Heart Pine',
-             'Little koala rock'];
+            'Little koala rock'];
 
     var container = document.getElementById('content');
     var nextBtn = document.getElementById('next');
@@ -53,8 +53,6 @@
         newSlide.className= `fade${myphotos[currentImage]}`;
         container.appendChild(newSlide);
     
-        // const image2 = document.querySelector('.fadeimage2');
-        // image2.style.width = "600";
 
         if (container.children.length>2){
             container.removeChild
