@@ -221,3 +221,15 @@ img{
     margin-left: 20px;
     padding-left: 30px;
 }
+
+footer{
+    position: absolute;
+    top: 800px;
+    left: 35%;
+}
+
+footer a{
+    text-decoration: none;
+    padding: 0 30px;
+    color: brown;
+}
