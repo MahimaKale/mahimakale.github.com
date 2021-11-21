@@ -1,0 +1,223 @@
+body {
+    font-family: Arial;
+    color: #333;
+    padding-left: 10px;
+    line-height: 1.5em;
+    background-image: url(images/background.png);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#one{
+    position: absolute;
+    transform: scale(0.5);
+    top: 500px;
+    left: 100px;
+    transition: all 0.5s ease;
+}
+
+#two{
+    position: absolute;
+    transform: scale(0.5);
+    top: 500px;
+    left: 900px;
+    transition: all 0.5s ease;
+}
+
+#line{
+    position: absolute;
+    border: 2px solid green;
+    width: 400px;
+    top: 230px;
+    left: 35%;
+}
+
+#start h1{
+    position: absolute;
+    left: 25%;
+    z-index: 1;
+    color: rgb(37, 37, 37);
+    filter: drop-shadow(2px 2px 10px gray);
+
+}
+
+#highlight{
+    position: absolute;
+    background-color: rgb(91, 216, 91);
+    opacity: 0.4;
+    height: 100vh;
+    width: 50vw;
+    top: -2000%;
+    right: 0;
+}
+
+#red{
+    position: absolute;
+    background-color: rgb(179, 4, 4);
+    opacity: 0.4;
+    height: 100vh;
+    width: 50vw;
+    top: -2000%;
+    right: 0;
+}
+
+#score {
+    position: absolute;
+    background-color: rgb(177, 255, 167);
+    width: 200px;
+    padding: 7px;
+    top: 75px;
+    left: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    filter: drop-shadow(2px 2px 10px gray);
+}
+#scoresec {
+    position: absolute;
+    background-color: rgb(177, 255, 167);
+    width: 200px;
+    padding: 7px;
+    top: 75px;
+    left: 1100px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    filter: drop-shadow(2px 2px 10px gray);
+
+}
+
+#gamecontrol h2{
+    position: absolute;
+    top:35px;
+    z-index: 1;
+    color: black;
+    left: 40%;
+    color: rgb(37, 37, 37);
+    font-size: 20px;
+}
+
+#gamecontrol #quit{
+    position: absolute;
+    top: 20px;
+    left: 90%;
+    z-index: 1;
+    background-color: rgb(255, 140, 111);
+    color: rgb(43, 43, 43);
+}
+
+#startgame{
+    position: absolute;
+    top: 300px;
+    left: 435px;
+    background-color: rgb(253, 181, 99);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 20px black);
+}
+
+button { 
+    padding: 10px;
+}
+
+div {
+    padding: 20px;
+}
+
+
+#actions {
+    position: absolute;
+    top: 350px;
+}
+
+#overlay{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: blanchedalmond;
+    opacity: 0.9;
+}
+
+#overlay article{
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    padding: 50px;
+    opacity: 1;
+    color: black;
+    background-color: brown;
+    color: white;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.close{
+    background-color: brown;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+}
+
+#game {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;    
+    position: absolute;
+    top: -20px;
+    left: 0;
+    /* background-color: rgb(87, 204, 87,0.4);
+    height: 100vh;
+    width: 50vw; */
+    padding-top: 200px;
+    width: 300px;
+}
+
+#roll{
+    font-size: 20px;
+}
+
+#rollagain{
+    background-color: rgb(255, 140, 111);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#pass{
+    background-color: rgb(255, 140, 111);
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+#quit{
+    border-radius: 10px;
+}
+#end{
+    width: 80vw;
+    height: 50vh;
+    background-color: blanchedalmond;
+    position: absolute;
+    z-index: 0;
+    top: -1000px;
+    left: 5%;
+    opacity: 0;
+    padding: 50px;
+    line-height: 30vh;
+    font-size: 50px;
+    border-radius: 20px;
+}
+
+#roll{
+    background-color: rgb(255, 140, 111);
+    color: rgb(43, 43, 43);
+    border-radius: 10px;
+}
+
+img{
+    margin-left: 20px;
+    padding-left: 30px;
+}

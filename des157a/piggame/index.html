@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section id="start">
+        <h1>SQUID GAME: RED LIGHT/ GREEN LIGHT</h1>
+
+        <div id="gamecontrol">
+            <h2 id="heading">Start a Game</h2>
+            <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+        </div>
+        <hr id="line">
+        <div id="actions"></div>
+        <div id="score">Player 1</div> 
+        <div id="scoresec">Player 2</div> 
+        <div id="game"></div>
+        <div id="highlight"></div>
+        <div id="red"></div>
+        <div >
+            <img src="images/player1.png" alt="player1" id="one">
+        </div>
+        <div >
+            <img src="images/player2.png" alt="player2" id="two">
+        </div>
+    </section>
+
+    <section id="overlay" class="hidden">
+        <button class="close">Start Game?</button>
+        <article id="intro">
+            <h1>Welcome to Squid Game!</h1>
+            <h3>*No you do not win a gazillion dollars if you win. Just bragging rights.</h3>
+            <h2>Game rules:</h2>
+            <p>There are two players. The player whose turn it is has their screen highlighted green or has the "green light" and rolls the dice. The total of the roll is added to the current player's score and allowed to move ahead that many steps, unless either die comes up as a "one". If this happens, this player's turn is over, their screen turns red and it is the other player’s turn whose screen turns green. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. <strong>first player to get 30 points or higher wins, that is, the first player to cross the finish green line wins.</strong> </p>
+            <p><strong>, and if you roll two "ones" (snake eyes), you will be eliminated and taken out by one of the red suit dudes.</strong></p>
+        </article>   
+    </section>
+    <section>
+        <div id="end"></div>
+    </section>
+    <footer>
+        <a href="https://validator.w3.org/check?uri=https://mahimakale.github.io/des157a/lj/">HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+    </footer>
+
+   
+    
+    
+</body>
+</html>
