@@ -70,8 +70,8 @@ div{
     padding: 40px;
     left: -200%;
     top: 0px;
-    width: 110%;
-    height: 50vh;
+    width: 500px;
+    height: 420px;
     filter: drop-shadow(100%);
 }
 
@@ -193,20 +193,70 @@ div{
 #content:hover #mytext{
     opacity: 1;
     transition: all 1s ease;
-
 }
 
-#content:hover h1{
-    top: 0px;
-    transition: all 1s ease;
-
-}
 
 #content:hover #overlay{
     left: -130%;
     opacity: 1;
     transition: all 2s ease;
 }
+
+
+
+#bubble{
+    position: absolute;
+    top: 100px;
+    left: 34%;
+    width: 150px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: rgb(175, 102, 175);
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    opacity: 0;
+    animation: bubble 5s forwards;
+}
+
+@keyframes bubble{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
+#bubble section{
+    position: absolute;
+    left: 142px;
+    top: 50px;
+    border-radius: 40px;
+    width: 60px;
+    height: 50px;
+    background-color: rgb(175, 102, 175);
+}
+
+#bubble .blurb{
+    position: absolute;
+    left: 200px;
+    top: 80px;
+    border-radius: 40px;
+    width: 40px;
+    height: 30px;
+    background-color: rgb(175, 102, 175);
+}
+
 
 
 /*footer*/

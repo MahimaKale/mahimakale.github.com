@@ -2,11 +2,11 @@
     'use strict';
     console.log('reading js');
 
-    document.querySelector('.close').addEventListener('click', function(event){
-        event.preventDefault();
-        document.getElementById('start').style.left = "-10000px";
+    // document.querySelector('.close').addEventListener('click', function(event){
+    //     event.preventDefault();
+    //     document.getElementById('start').style.left = "-10000px";
 
-    })
+    // })
 
     let bubbles = document.querySelectorAll('div');
 
@@ -50,7 +50,7 @@
             'Charlie from my pumpkin patch (Oct 14, 2020 to September 6, 2021) This was my first time to a pumpkin patch. Charlie just looked different from all the stark orange pumpkins and some might say he looked ugly too but my heart was set on getting it, for me it was perfect. ',
             'I made this keychain in wood class in 9th grade. This was the time that I realised my passion for design and this keychain just means a lot to me. It is made out of a thin aluminum sheet.',
             'I found this pine on a hike at Tahoe in 2018 and I have had it ever since! The name was just concocted by my friends with whom I went on the hike. The heart-pine!',
-            'This might be the oldest craft piece I have that I made by myself! I made this when I was around 12 years old. I love koalas! They sleep a lot (so do I)and theye at a lot (so do I). It is just a pebble from outside my house back in India that I had just picked up and painted one night.',
+            'This might be the oldest craft piece I have that I made by myself! I made this when I was around 12 years old. I love koalas! They sleep a lot (so do I)and they eat at a lot (so do I). It is just a pebble from outside my house back in India that I had just picked up and painted one night.',
         ];
 
     var container = document.getElementById('content');
@@ -62,12 +62,15 @@
     window.addEventListener("wheel",scroll);
 
     function scroll(){
+        // document.getElementById('bubble').style.opacity = "1";
         currentImage++;
         currentImageTop++;
         currentImageBottom++;
         console.log(currentImage);
         console.log(currentImageTop);
         console.log(currentImageBottom); 
+
+        
  
 
             if(currentImage > (myphotos.length-1)){
