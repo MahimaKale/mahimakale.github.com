@@ -1,26 +1,286 @@
 body{
-    padding: 20px;    
-    background-color: rgb(255, 244, 232);
+    /* background:radial-gradient(circle farthest-corner at right center, #c4c4c4 0%, #757575 0%, #4d4c4c 0%, #212121 0%, #000000 100%); */
+    position: relative;
+    height: 100vh;
+    scroll-behavior: none;
+    background-color: rgb(255, 232, 255);
+}
+#start{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 100px;
+    height: 70vh;
+    color: white;
+}
+
+.close{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+
+h1{
+    margin: auto;
+    margin: 50px;
+    text-align: center;
+    position: absolute;
+    position: fixed;
+    left: 10%;
+    top: 250px;
+    font-size: 50px;
+    color: rgb(56, 56, 56);
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+}
+
+div{
+    width: 100px;
+    height: 20px;
+    background-color: rgb(245, 207, 245);
+    border-radius: 20px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+    animation-name: divs;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
     
+@keyframes divs{
+    from{
+        transform:matrix(1.00,0.00,0.00,1.00,0,0);
+    }
+    to{
+        transform:matrix(1.00,0.00,0.00,1.00,30,0);
+    }
 }
-h1, h2{
-    text-align: center;
-}
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;}
 
-section{
-    background-color: wheat;
-    padding: 20px;
-    margin: 10px;
+#overlay{
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(83, 83, 83);
+    border-radius: 20px ;
+    padding: 40px;
+    left: -200%;
+    top: 0px;
+    width: 500px;
+    height: 420px;
+    filter: drop-shadow(100%);
+}
+
+#maintext{
+    text-align: left;
+    padding-top: 30%;
+    font-size: 18px;
+    color: white;    
+}
+
+
+#mytext{
+    position: absolute;
+    font-size: 30px;
+    top: 60px;
+    right: 120px;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Lobster', cursive;
+    width: 300px;
+    color: rgb(255, 203, 255);
+    opacity: 0;
+}
+
+#content {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: 200px;
+    top: 100px;
+    border-radius: 50%;
+    transition: all 2s ease;
+}
+
+#contentbottom i{
+    position: absolute;
+    top: 86%;
+    left: 48%;
+    font-size: 30px;
+    animation: bounce 1s infinite alternate ease;
+    color: purple;
+}
+
+@keyframes bounce{
+    from{
+        top: 84%;
+    } to{
+        top: 86%;
+    }
+}
+
+#contentbottom p{
+    position: absolute;
+    top: 88%;
+    left: 42%;
+}
+
+.topslide{
+    position: absolute;
+    right: -120px;
+    top: -120px;
+    border-radius: 50%;
+    animation-name: top;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+}
+@keyframes top{
+    from{
+        transform:matrix(1.60,0.00,0.00,1.60,500,-500);
+    }
+    to{
+        transform:matrix(1.00,0.00,0.00,1.00,0,0);
+    }
+}
+.bottomslide{
+    position: absolute;
+    right: -120px;
+    bottom: -120px;
+    border-radius: 50%;
+    animation-name: bot;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+}
+
+@keyframes bot{
+    from{
+        transform:matrix(1.60,0.00,0.00,1.60,-400,-300);
+    }
+    to{
+        transform:matrix(1.00,0.00,0.00,1.00,0,0);
+    }
+}
+
+.fade{
+    border-radius: 50%;
+    animation-name: main;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+   
+}
+
+    
+@keyframes main{
+    from{
+        transform:matrix(0.60,0.00,0.00,0.60,400,-300);
+    }
+    to{
+        transform:matrix(1.00,0.00,0.00,1.00,0,0);
+    }
+}
+
+
+#content img:hover{
     border-radius: 10px;
-    width: 320px;
+    width: 510px;
+    height: 510px;
 }
 
-section h3{
+#content:hover #mytext{
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+
+#content:hover #overlay{
+    left: -130%;
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+
+
+#bubble{
+    position: absolute;
+    top: 100px;
+    left: 34%;
+    width: 150px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: rgb(175, 102, 175);
     text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    opacity: 0;
+    animation: bubble 5s forwards;
+}
+
+@keyframes bubble{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 
 }
 
+#bubble section{
+    position: absolute;
+    left: 142px;
+    top: 50px;
+    border-radius: 40px;
+    width: 60px;
+    height: 50px;
+    background-color: rgb(175, 102, 175);
+}
+
+#bubble .blurb{
+    position: absolute;
+    left: 200px;
+    top: 80px;
+    border-radius: 40px;
+    width: 40px;
+    height: 30px;
+    background-color: rgb(175, 102, 175);
+}
+
+
+
+/*footer*/
+
+
+#links{
+    position: absolute;
+}
+footer{
+    position: absolute;
+    top: 95%;
+    text-align: center;
+    margin: auto;
+    padding: 0 20px;
+}
+
+footer a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: purple;
+    font-size: 10px;
+}
+
+footer a:hover{
+    color: rgb(68, 68, 68);
+    font-style: italic;
+}

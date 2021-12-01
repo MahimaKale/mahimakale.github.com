@@ -40,7 +40,7 @@
             'Mini Ballerina Present',
             'Bottled Galaxy',
             'Charlie the Pumpkin',
-            'Keychain that defined my design life',
+            'My life defining keychain',
             'Potlu the Heart Pine',
             'Little koala rock'];
 
@@ -54,81 +54,84 @@
         ];
 
     var container = document.getElementById('content');
-    const slide = document.getElementById('myimage');
+    var containerTop = document.getElementById('contenttop');
+    var containerBottom = document.getElementById('contentbottom');
 
-    //addEventListener("wheel",scroll);
-    //event.deltaY
 
-    window.addEventListener("wheel",scroll);
-
-    function scroll(){
-        // document.getElementById('bubble').style.opacity = "1";
-        currentImage++;
-        currentImageTop++;
-        currentImageBottom++;
-        console.log(currentImage);
-        console.log(currentImageTop);
-        console.log(currentImageBottom); 
-
-        
- 
-
-            if(currentImage > (myphotos.length-1)){
-            currentImage =0 ;
-            }
-            
-            var newSlide = document.createElement('img');
+   
+    var newSlide = document.createElement('img');
             newSlide.src = `images/${myphotos[currentImage]}`;
-            document.getElementById('mytext').innerHTML= mytext[currentImage];
-            document.getElementById('maintext').innerHTML= mybodytext[currentImage];
+            
             newSlide.style.width = "500px";
             newSlide.style.height = "500px";
             newSlide.style.position = "fixed";
             newSlide.style.transition = "all 1s ease-in";
             newSlide.className= "fade";
-            container.appendChild(newSlide);
 
-            if (container.children.length>1){
-                container.removeChild
-            }
-
-            var containerTop = document.getElementById('contenttop');
-
-            if(currentImageTop > (myphotos.length-1)){
-                currentImageTop = 0;
-                }
-
-            var topSlide = document.createElement('img');
+    var topSlide = document.createElement('img');
             topSlide.src = `images/${myphotos[currentImageTop]}`;
             topSlide.className = "topslide";
             topSlide.style.width = "300px";
             topSlide.style.height = "300px";
             topSlide.style.position = "fixed";
             topSlide.style.transition = "all 1s ease";
-            containerTop.appendChild(topSlide);
-
-            if (containerTop.children.length>1){
-                containerTop.removeChild
-            }
-            
-            var containerBottom = document.getElementById('contentbottom');
-
-            if(currentImageBottom > (myphotos.length-1)){
-                currentImageBottom = 0;
-                }
-
-            var bottomSlide = document.createElement('img');
+    
+    var bottomSlide = document.createElement('img');
             bottomSlide.src = `images/${myphotos[currentImageBottom]}`;
             bottomSlide.className = "bottomslide";
             bottomSlide.style.width = "300px";
             bottomSlide.style.height = "300px";
             bottomSlide.style.position = "fixed";
             bottomSlide.style.transition = "all 1s ease";
-            containerBottom.appendChild(bottomSlide);
 
-            if (containerBottom.children.length>1){
+    window.addEventListener("wheel",scroll);
+
+    function scroll(){
+        currentImage++;
+        newSlide.src = `images/${myphotos[currentImage]}`;
+        currentImageTop++;
+        topSlide.src = `images/${myphotos[currentImageTop]}`;
+        currentImageBottom++;
+        bottomSlide.src = `images/${myphotos[currentImageBottom]}`;
+        document.getElementById('mytext').innerHTML= mytext[currentImage];
+        document.getElementById('maintext').innerHTML= mybodytext[currentImage];
+        console.log(currentImage);
+        console.log(currentImageTop);
+        console.log(currentImageBottom); 
+
+
+
+        if(currentImage > (myphotos.length -2 )){
+            currentImage =0 ;
+        }
+            
+        container.appendChild(newSlide);
+
+            
+        if (container.children.length>1){
+                container.removeChild
+        }
+
+        if(currentImageTop > (myphotos.length -2)){
+                currentImageTop = 0;
+        }
+        
+        containerTop.appendChild(topSlide);
+
+        if (containerTop.children.length>1){
+                containerTop.removeChild
+        }           
+
+        if(currentImageBottom > (myphotos.length-2)){
+                currentImageBottom = 0;
+        }
+
+        containerBottom.appendChild(bottomSlide);
+
+
+        if (containerBottom.children.length>1){
                 containerBottom.removeChild
-            }
+        }
             
     
            
