@@ -1,8 +1,8 @@
 body{
-    /* background:radial-gradient(circle farthest-corner at right center, #c4c4c4 0%, #757575 0%, #4d4c4c 0%, #212121 0%, #000000 100%); */
+
     position: relative;
     height: 100vh;
-    scroll-behavior: none;
+    /* scroll-behavior: none; */
     background-color: rgb(255, 232, 255);
 }
 #start{
@@ -72,7 +72,6 @@ div{
     top: 0px;
     width: 500px;
     height: 420px;
-    filter: drop-shadow(100%);
 }
 
 #maintext{
