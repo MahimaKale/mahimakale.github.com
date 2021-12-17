@@ -7,37 +7,106 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lobster&family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/10b06dad91.js" crossorigin="anonymous"></script>
     <link href="styles.css" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="scriptw.js" defer></script>
     <title>Mahima_Portfolio</title>
 </head>
 <body>
-    <section>
+    <header>        
+        <div id="white"></div>
+
         <h1><a href="index.html">Mahima Kale</a></h1>
         <div id="corner"></div>
-    </section>
+        
+        <div class="menu">
+            <ul>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li id="worktab"><a href="work.html">Work</a>
+                </li>
+                <li><a href="home.html">About Me</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <p id="topword">Click to learn more about each of the following UI/UX projects</p>
+    
     <section id="hidden">
-        <div id="backdrop"></div>
-        <button id="close">Close</button>
-        <img src="images/first.png" alt="#nopinktax" id="overone">
-        <img src="images/second.png" alt="ConnectNow_Landing Page" id="overtwo">
-        <img src="images/third.png" alt="Botanik Herbs and Tea" id="overthree">
+                <!-- <div id="backdrop"></div>    -->
+            <button id="close">Close</button>
+                <img src="images/first.png" alt="#nopinktax" id="overone">
+                <img src="images/second.png" alt="ConnectNow_Landing Page" id="overtwo">
+                <img src="images/third.png" alt="Botanik Herbs and Tea" id="overthree">
     </section>
 
-    <div class="menu">
+    <div id="scroll">
         <ul>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li id="worktab"><a href="#">Work</a>
-            </li>
-            <li><a href="home.html">About Me</a></li>
+            <li id="ui"><a href="#slides">UI/UX</a></li>
+            <li id="magsec"><a href="#mags">Magazine Design</a></li>
+            <li id="pos"><a href="#poster">Posters</a></li>
+            <li id="log"><a href="#logo">Logo Design</a></li>
         </ul>
     </div>
-
-    <article>
-        <section id="slides">
+    <article>            
+        <section id="slides">                  
             <img src="images/p1.PNG" alt="#nopinktax" class="one">
             <img src="images/p2.PNG" alt="ConnectNow Landing Page" class="two">
-            <img src="images/p3.PNG" alt="Botanik Tea and Herbs" class="three">
+            <!-- <img src="images/p3.PNG" alt="Botanik Tea and Herbs" class="three"> -->
+            <img src="images/4.PNG" alt="Botanik Tea and Herbs" class="four">
+            <img src="images/5.PNG" alt="Botanik Tea and Herbs" class="five">
         </section>
     </article>
+    <article>
+        <section id="mags">
+            <img src="images/mag1.png" alt="Massimo Vignelli" class="mag1">
+            <img src="images/mag2.png" alt="Open Ceilings" class="mag2">
+            
+        </section>
+    </article>
+    <article>
+        <section id="poster">
+            <p>Poster, flyer and social media marketing for unitrans</p>
+            <img src="images/1.png" alt="unitrans" class="u1">
+            <img src="images/2.png" alt="unitrans" class="u2">
+            <img src="images/3.png" alt="unitrans" class="u3">
+            <img src="images/flyer.png" alt="unitrans" class="u4">
+   
+        </section>
+    </article>
+    <article>
+        <section id="logo">
+            <button class="carbut" id="previous">Previous</button>
+                <article class="carousel">
+                    
+                        <div class="carimg">
+                            <img src="work/logo/1.PNG" alt="logo">
+                            <img src="work/logo/2.PNG" alt="logo">
+                            <img src="work/logo/3.PNG" alt="logo">
+                            <img src="work/logo/4.PNG" alt="logo">
+                            <img src="work/logo/5.PNG" alt="logo">
+                            <img src="work/logo/6.PNG" alt="logo">
+                            <img src="work/logo/7.PNG" alt="logo">
+                            <img src="work/logo/8.PNG" alt="logo">
+                            <img src="work/logo/9.PNG" alt="logo">
+                            <img src="work/logo/10.PNG" alt="logo">
+                            <img src="work/logo/11.PNG" alt="logo">
+                            <img src="work/logo/12.PNG" alt="logo">
+                            <img src="work/logo/13.PNG" alt="logo">
+                            <img src="work/logo/14.PNG" alt="logo">
+                            <img src="work/logo/15.PNG" alt="logo">
+                        </div>
+                </article>
+        <button class="carbut" id="nextbut">Next</button>
+        </section>
+    </article>
+
+    <footer>
+        <div class="contact">
+            <ul>
+                <li><a href="mailto:&#109;&#115;&#107;&#097;&#108;&#101;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/mahima-kale-04b277198/">Linkedin</a></li>
+            </ul>
+        </div>            
+        <div id="bottomcircle"></div>
+
+    </footer>
 </body>
 </html>
