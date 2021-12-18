@@ -100,7 +100,7 @@
 
             carouselImages.style.transform = `translate(${translateX}px)`;
         });
-    })
+    });
 
     //poster
 
@@ -132,6 +132,6 @@
 
             carouselImagespost.style.transform = `translate(${translateXpost}px)`;
         });
-    })
+    });
 
 }());

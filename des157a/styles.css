@@ -1,19 +1,24 @@
+
 .container{
     background: url(images/background1.png);
-    max-width: 1366px;
-    min-width: 900px;
+    background-position: center top;
+    background-size: 100% 100%;
+    max-width: 100%;
+    min-width: auto;
     margin: auto;
     position: relative;
 }
 
 #banner{
-    width: 1100px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     margin: auto;
 }
 
 .lights{
     position: absolute;
+    width: 65%;
+    height: auto;
     top: -15px;
     left: 200px;
     filter: sepia(100%);
@@ -57,6 +62,8 @@
 
 .vine{
     position: absolute;
+    width: 100%;
+    z-index: 1;
     left: 0px;
     top: -15px;
     transform-origin: top;
