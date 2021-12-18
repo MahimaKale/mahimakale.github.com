@@ -72,66 +72,66 @@
 
     //carousel:::
 
-    const carouselImages = document.querySelector('.carimg');
-    const carouselButtons = document.querySelectorAll('.carbut');
-    const numberOfImages = document.querySelectorAll('.carimg img').length;
-    let imageIndex = 1;
-    let translateX = 0;
+    // const carouselImages = document.querySelector('.carimg');
+    // const carouselButtons = document.querySelectorAll('.carbut');
+    // const numberOfImages = document.querySelectorAll('.carimg img').length;
+    // let imageIndex = 1;
+    // let translateX = 0;
 
-    //id previous and nextbut
+    // //id previous and nextbut
 
-    carouselButtons.forEach(button => {
+    // carouselButtons.forEach(button => {
 
-        button.addEventListener('click', event => {
+    //     button.addEventListener('click', event => {
             
-            if(event.target.id ==='previous'){
-                if(imageIndex !== 1){
-                    imageIndex --;
-                    translateX +=300;
-                }
-            }else{
-                if (imageIndex !== numberOfImages){
-                    imageIndex ++;
-                    translateX -= 300;
-                }
-            } 
+    //         if(event.target.id ==='previous'){
+    //             if(imageIndex !== 1){
+    //                 imageIndex --;
+    //                 translateX +=300;
+    //             }
+    //         }else{
+    //             if (imageIndex !== numberOfImages){
+    //                 imageIndex ++;
+    //                 translateX -= 300;
+    //             }
+    //         } 
 
-            console.log(imageIndex);
+    //         console.log(imageIndex);
 
-            carouselImages.style.transform = `translate(${translateX}px)`;
-        });
-    });
+    //         carouselImages.style.transform = `translate(${translateX}px)`;
+    //     });
+    // });
 
-    //poster
+    // //poster
 
-    const carouselImagespost = document.querySelector('.carimage');
-    const carouselButtonspost = document.querySelectorAll('.carbutton');
-    const numberOfImagespost = document.querySelectorAll('.carimage img').length;
-    let imageIndexpost = 1;
-    let translateXpost = 0;
+    // const carouselImagespost = document.querySelector('.carimage');
+    // const carouselButtonspost = document.querySelectorAll('.carbutton');
+    // const numberOfImagespost = document.querySelectorAll('.carimage img').length;
+    // let imageIndexpost = 1;
+    // let translateXpost = 0;
 
-    //id previous and nextbut
+    // //id previous and nextbut
 
-    carouselButtonspost.forEach(button => {
+    // carouselButtonspost.forEach(button => {
 
-        button.addEventListener('click', event => {
+    //     button.addEventListener('click', event => {
             
-            if(event.target.id ==='previoussec'){
-                if(imageIndexpost !== 1){
-                    imageIndexpost --;
-                    translateXpost +=300;
-                }
-            }else{
-                if (imageIndexpost !== numberOfImagespost){
-                    imageIndexpost ++;
-                    translateXpost -= 300;
-                }
-            } 
+    //         if(event.target.id ==='previoussec'){
+    //             if(imageIndexpost !== 1){
+    //                 imageIndexpost --;
+    //                 translateXpost +=300;
+    //             }
+    //         }else{
+    //             if (imageIndexpost !== numberOfImagespost){
+    //                 imageIndexpost ++;
+    //                 translateXpost -= 300;
+    //             }
+    //         } 
 
-            console.log(imageIndexpost);
+    //         console.log(imageIndexpost);
 
-            carouselImagespost.style.transform = `translate(${translateXpost}px)`;
-        });
-    });
+    //         carouselImagespost.style.transform = `translate(${translateXpost}px)`;
+    //     });
+    // });
 
 }());

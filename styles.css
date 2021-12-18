@@ -298,13 +298,18 @@ footer .contact ul{
 
 #logo{
     position: absolute;
-    top: 450%;
-    left: 40%;
+    top: 460%;
+    left: 10%;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    padding-top: 200px;
+      padding-top: 200px;
+}
 
+#logo img{
+    width: 200px;
+    height: 200px;
+    border: solid rgb(202, 202, 202) 0.5px;
 }
 
 #poster img{
@@ -374,12 +379,27 @@ footer .contact ul{
 
 #magword{
     position: absolute;
-    top: 1320px;
+    top: 180%;
     text-align: center;
     font-size: 14px;
     padding-left: 35%;
 }
 
+#postword{
+    position: absolute;
+    top: 215%;
+    text-align: center;
+    font-size: 14px;
+    padding: 35%;
+}
+
+#logoword{
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    padding: 35%;
+    top: 400%;
+}
 #scroll{
     position: fixed;
     top: 18%;
@@ -465,7 +485,7 @@ footer .contact ul{
     z-index: 0;
     border: 1px white solid;
 }
-/* #backdrop{
+/* /* #backdrop{
     position: absolute;
     top: 0;
     left: 0;
@@ -475,55 +495,52 @@ footer .contact ul{
     z-index: 0.9;
 } */
 
-.carousel{
+/* .carousel{
     align-items: center;
     display: flex;
     margin: 2rem auto;
     overflow: hidden;
     position: relative;
     width: 300px;
-}
+} */
 
-.carousel img{
+/* .carousel img{
     width: 300px;
     height: auto;
 }
 
 .carimg{
     display: flex;
-    transform: translateX(0);
-    transition: transform 0.25s;
-}
+    border: solid black 1px;
+    /* transform: translateX(0);
+    transition: transform 0.25s; 
+}*/
 
-.carimage{
+/* .carimage{
     display: flex;
-    transform: translateX(0);
-    transition: transform 0.25s;
-}
+    /* transform: translateX(0);
+    transition: transform 0.25s; */
+/* }
 
 #previous{
     position: absolute;
-right: 400px;    
-top: 400px;
+    left: -20%;
+    top: 70%;
 }
 
 #nextbut{
     position: absolute;    
-    left: 400px;   
-    top: 400px;
+    right: -20%;   
+    top: 70%;
 }
 
-#previoussec{
-    position: absolute;
-    left: 500px;
-    top: 750px;
-}
 
-#nextsec{
-    position: absolute;
-    right: 400px;
-    top: 750px;
-}
+
+.carbut{
+    background-color: white;
+    border: none;
+    font-size: 30px;
+}  */
 
 /* #hero{
     position: absolute;
@@ -573,6 +590,23 @@ h4{
 }
 
 #hero p a{
+    text-decoration: none;
+    color: rgb(252, 141, 174);
+}
+
+#oc{
+    position: absolute;
+    top: 390%;
+    background-color: rgb(255, 255, 255);
+    left: 40%;
+    width: 100vw;
+    height: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+
+#oc a{
     text-decoration: none;
     color: rgb(252, 141, 174);
 }
