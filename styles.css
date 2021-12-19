@@ -220,7 +220,7 @@ i:hover{
 .contact ul li{
     list-style: none;
     padding: 0;
-    padding: 0 50px;
+    padding-right: 70px;
 }
 
 .contact ul li a {
@@ -298,7 +298,7 @@ footer .contact ul{
 
 #logo{
     position: absolute;
-    top: 460%;
+    top: 470%;
     left: 10%;
     display: flex;
     flex-wrap: wrap;
@@ -398,7 +398,7 @@ footer .contact ul{
     text-align: center;
     font-size: 14px;
     padding: 35%;
-    top: 400%;
+    top: 410%;
 }
 #scroll{
     position: fixed;
