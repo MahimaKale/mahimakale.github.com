@@ -88,8 +88,8 @@ h1 a{
     position: absolute;
     font-family: 'Stardos Stencil', cursive;
     text-align: center;
-    left: 43%;
-    top: 65%;
+    left: 41%;
+    top: 67%;
     font-size: 20px;
     padding: 0;
 }
@@ -99,7 +99,7 @@ a i{
     font-family: 'Stardos Stencil', cursive;
     text-align: center;
     left: 43%;
-    top: 70%;
+    top: 72%;
     font-size: 30px;
     color: rgb(230, 113, 113);
     padding-top: 10px;
@@ -115,10 +115,10 @@ i:hover{
 
 @keyframes arrow{
     0%{
-        left: 43%;
+        left: 40%;
     }
     100%{
-        left: 45%;
+        left: 43%;
     }
 }
 
@@ -610,3 +610,157 @@ h4{
     text-decoration: none;
     color: rgb(252, 141, 174);
 }
+
+@media only screen and (max-width: 1200px){
+    #circle #one{
+        width: 340px;
+        height: 340px;
+    }
+    #circle #two{
+        width: 380px;
+        height: 380px;
+    }
+    @keyframes one {
+        from{
+            left: 0;
+        }
+        to{
+            left: 40%;
+        }
+    }
+    
+    
+    @keyframes two {
+        from{
+            left: 100%;
+        }
+        to{
+            left: 20%;
+        }
+    }
+
+    #hi img{
+        top: 170px;
+        left: 29%;
+    }
+    #welcome{
+        left: 35%;
+        top: 65%;
+    }
+
+    a i{
+        top: 70%;
+        left: 0%;
+    }
+    @keyframes arrow{
+        0%{
+            left: 32%;
+        }
+        100%{
+            left: 35%;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px){
+    #circle #one{
+        width: 300px;
+        height: 300px;
+        top: 110px;
+    }
+    #circle #two{
+        width: 340px;
+        height: 340px;
+        top: 90px;
+    }
+
+    #hi img{
+        top: 160px;
+        left: 28%;
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #circle #one{
+        width: 230px;
+        height: 230px;
+        top: 110px;
+    }
+    #circle #two{
+        width: 270px;
+        height: 270px;
+        top: 90px;
+    }
+
+    #hi img{
+        top: 145px;
+        left: 28%;
+        width: 280px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #circle #one{
+        width: 150px;
+        height: 150px;
+        top: 110px;
+    }
+    #circle #two{
+        width: 190px;
+        height: 190px;
+        top: 90px;
+    }
+
+    #hi img{
+        top: 130px;
+        left: 28%;
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-height: 700px){
+    #welcome{
+        top: 75%;
+    }
+
+    a i{
+        top: 80%;
+    }
+    @keyframes arrow{
+        0%{
+            left: 40%;
+        }
+        100%{
+            left: 43%;
+        }
+    }
+}
+
+@media only screen and (min-height: 700px){
+    #welcome{
+        top: 68%;
+        left: 42%;
+        font-size: 18px;
+
+    }
+
+    a i{
+        top: 73%;
+        left: 42%;
+    }
+    @keyframes arrow{
+        0%{
+            left: 42%;
+        }
+        100%{
+            left: 46%;
+        }
+    }
+}
+
+
+
