@@ -70,33 +70,5 @@
 
     })
 
-    //carousel:::
-
-    // const carouselImages = document.querySelector('carimg');
-    // const carouselButtons = document.querySelectorAll('carbut');
-    // const numberOfImages = document.querySelectorAll('carimg img').length;
-    // let imageIndex = 1;
-    // let translateX = 0;
-
-    // //id previous and nextbut
-
-    // carouselButtons.forEach(buttons => {
-    //     buttons.addEventListener('click', event =>{
-    //         if(event.target.id ==='previous'){
-    //             if(imageIndex !== 1){
-    //                 imageIndex --;
-    //                 translateX +=300;
-    //             }
-    //         }else{
-    //             if (imageIndex !== numberOfImages){
-    //                 imageIndex ++;
-    //                 translateX -= 300;
-    //             }
-    //         }
-
-    //         carouselImages.style.transform = `translate(${translateX}px)`
-    //     });
-    // })
-
 
 }());

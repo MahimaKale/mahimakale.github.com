@@ -12,9 +12,11 @@ body{
 
 #me{
     position: absolute;
-    top: 160px;
-    left: 250px;
+    top: 200px;
+    left: 300px;
     border-radius: 10px;
+    height: 400px;
+    width: auto;
 }
 
 header{
@@ -45,6 +47,18 @@ header{
     text-align: center;
 }
 
+.menu #port{
+    color: black;
+}
+.menu #aboutme{
+    color: rgb(230, 113, 113);}
+
+    .menu #port1{
+        color: rgb(230, 113, 113);
+    }
+    .menu #aboutme1{
+        color: black;
+    }
 .menu ul li a:hover{
     color: black;	
     font-weight:bold;
@@ -274,11 +288,28 @@ main{
     text-align: center;
     padding-top: 15%;
     justify-content: center;
+    top: 15%;
 }
 
 main p{
     margin: 0 auto;
     flex: 100%;
+    font-size: 18px;
+}
+
+#magss{
+    position: absolute;
+}
+#unitrans{
+    position: absolute;
+    height: 200px;
+    top: 210%;
+}
+
+#logoa{
+    position: absolute;
+    height: 200px;
+    top: 360%;
 }
 
 #slides{
@@ -305,7 +336,7 @@ main p{
 }
 
 #poster img{
-    width: 350px;
+    width: 300px;
     height: auto;
     margin: 40px;
     border-radius: 10px;

@@ -2,6 +2,7 @@
     'use strict';
     console.log('reading js');
 
+
     const UI = document.getElementById('ui');
     const mag = document.getElementById('magsec');
     const poster = document.getElementById('pos');
@@ -70,68 +71,5 @@
         UI.style.backgroundColor = "white";
     });
 
-    //carousel:::
-
-    // const carouselImages = document.querySelector('.carimg');
-    // const carouselButtons = document.querySelectorAll('.carbut');
-    // const numberOfImages = document.querySelectorAll('.carimg img').length;
-    // let imageIndex = 1;
-    // let translateX = 0;
-
-    // //id previous and nextbut
-
-    // carouselButtons.forEach(button => {
-
-    //     button.addEventListener('click', event => {
-            
-    //         if(event.target.id ==='previous'){
-    //             if(imageIndex !== 1){
-    //                 imageIndex --;
-    //                 translateX +=300;
-    //             }
-    //         }else{
-    //             if (imageIndex !== numberOfImages){
-    //                 imageIndex ++;
-    //                 translateX -= 300;
-    //             }
-    //         } 
-
-    //         console.log(imageIndex);
-
-    //         carouselImages.style.transform = `translate(${translateX}px)`;
-    //     });
-    // });
-
-    // //poster
-
-    // const carouselImagespost = document.querySelector('.carimage');
-    // const carouselButtonspost = document.querySelectorAll('.carbutton');
-    // const numberOfImagespost = document.querySelectorAll('.carimage img').length;
-    // let imageIndexpost = 1;
-    // let translateXpost = 0;
-
-    // //id previous and nextbut
-
-    // carouselButtonspost.forEach(button => {
-
-    //     button.addEventListener('click', event => {
-            
-    //         if(event.target.id ==='previoussec'){
-    //             if(imageIndexpost !== 1){
-    //                 imageIndexpost --;
-    //                 translateXpost +=300;
-    //             }
-    //         }else{
-    //             if (imageIndexpost !== numberOfImagespost){
-    //                 imageIndexpost ++;
-    //                 translateXpost -= 300;
-    //             }
-    //         } 
-
-    //         console.log(imageIndexpost);
-
-    //         carouselImagespost.style.transform = `translate(${translateXpost}px)`;
-    //     });
-    // });
 
 }());
