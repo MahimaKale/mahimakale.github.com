@@ -3,6 +3,8 @@
 
 
     const fullScreen = document.querySelector('.fa-expand');
+    const external = document.querySelector('.fa-external-link-alt');
+    const hov = document.querySelector('#link');
     const fullPoem = document.querySelector(".fa-file.alt")
     const myVid = document.querySelector('#sky');
     const play = document.querySelector('.fa-play');
@@ -21,8 +23,16 @@
 
     const lines = document.querySelector('.lines');
 
+//external link 
 
+external.addEventListener('mouseover', function(){
+        hov.style.opacity = '1';
 
+})
+
+external.addEventListener('mouseout', function(){
+    hov.style.opacity = '0';
+})
 //fullscreen 
     fullScreen.addEventListener('click', function(){
         if(!document.fullscreenElement){
