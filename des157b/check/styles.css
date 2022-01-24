@@ -83,4 +83,14 @@ h1{
     transition: 2s ease-in-out;
 }
 
-
+#overlay{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    background-color: rgb(203, 245, 124);
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 1;
+    transition: 2s ease-out;
+}

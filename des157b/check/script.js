@@ -1,7 +1,6 @@
 (function(){
     'use strict';
 
-
 async function getData(){
     const grate = await fetch('data/gratitude.json');
     const data = await grate.json();
@@ -27,8 +26,6 @@ eachLink.addEventListener('click', function(event){
     
 }
 
-
-
 //list for gratitude display
 function outputHTML2(data){
     let html = '';
@@ -43,7 +40,10 @@ function outputHTML2(data){
 
 getData();
 
-
+setTimeout (function(){
+    console.log('hey dummy');
+    document.getElementById('overlay').style.opacity = '0';
+}, 5000);
 
 //video : https://www.youtube.com/watch?v=4UXJb4rjeDg
 })();
