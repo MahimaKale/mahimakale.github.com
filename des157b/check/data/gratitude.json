@@ -1,0 +1,63 @@
+{
+        "point1" : {
+            "time" : "7:45 AM",
+            "date" : "January 18",
+            "grateful" : "motivational talk with dad"
+        },
+        "point2" : {
+            "time" : "8:30 AM",
+            "date" : "January 18",
+            "grateful" : "in-person class"
+        },
+        "point3" : {
+            "time" : "12:00 PM",
+            "date" : "January 18",
+            "grateful" : "beautiful weather"
+        },
+        "point4" : {
+            "time" : "12:15 PM",
+            "date" : "January 18",
+            "grateful" : "my boots"
+        },
+        "point5" : {
+            "time" : "1:00 PM",
+            "date" : "January 18",
+            "grateful" : "amazing boyfriend <3"
+        },
+        "point6" : {
+            "time" : "3:00 PM",
+            "date" : "January 18",
+            "grateful" : "neighbors dogs and cats"
+        },
+        "point7" : {
+            "time" : "4:30 PM",
+            "date" : "January 18",
+            "grateful" : "indian spices"
+        },
+        "point8" : {
+            "time" : "12:00 PM",
+            "date" : "January 19",
+            "grateful" : "ketchup and fries"
+        },
+        "point9" : {
+            "time" : "1:00 PM",
+            "date" : "January 19",
+            "grateful" : "adobe"
+        },
+        "point10" : {
+            "time" : "5:00 PM",
+            "date" : "January 19",
+            "grateful" : "dogs at park"
+        },
+        "point11" : {
+            "time" : "5:00 PM",
+            "date" : "January 19",
+            "grateful" : "frisbee and sunset"
+        },
+        "point12" : {
+            "time" : "6:30 PM",
+            "date" : "January 23",
+            "grateful" : "Bill and Glenda helped me :)"
+        }
+        
+    }
