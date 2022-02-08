@@ -37,7 +37,7 @@ h2{
   color: rgb(255, 247, 210);
   font-size: 50px;
   top: 70%;
-  left: 16%; 
+  left: 20%; 
   transform-style: preserve-3d;
   transform: rotateX(-30deg);
 }
@@ -47,7 +47,7 @@ h2{
   color: rgb(255, 247, 210);
   font-size: 50px;
   top: 70%;
-  left: 76%; 
+  left: 80%; 
   transform-style: preserve-3d;
   transform: rotateX(-30deg);
 }
