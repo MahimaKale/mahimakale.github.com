@@ -54,6 +54,7 @@ var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
 const geometry = new THREE.BoxGeometry( 35, 5, 5 );
 const material = new THREE.MeshBasicMaterial( {color: 0x885533} );
 var cube = new THREE.Mesh(geometry, material);
+cube.position.x = 0;
 cube.position.y = -7;
 scene.add(cube);
 scene.add(sphere);
