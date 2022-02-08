@@ -1,0 +1,53 @@
+body { margin: 0;
+}
+canvas { 
+position: absolute;
+  width: 100vw; 
+  height: 100vh;
+ 
+}
+
+#canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1{
+  position: absolute;
+  z-index: 1;
+  padding-left: 20px;
+  color: rgb(255, 239, 195);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+  position: absolute;
+  z-index: 1;  
+  perspective: 100px;
+
+}
+
+#one{
+  color: rgb(255, 247, 210);
+  font-size: 50px;
+  top: 70%;
+  left: 16%; 
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg);
+}
+
+
+#two{
+  color: rgb(255, 247, 210);
+  font-size: 50px;
+  top: 70%;
+  left: 76%; 
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg);
+}
