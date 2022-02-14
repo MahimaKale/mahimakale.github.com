@@ -12,7 +12,6 @@ body {
 }
 #back{
     position: absolute;
-    height: 150vh;
     width: 100vw;
     bottom: -20px;
     left: 0;
