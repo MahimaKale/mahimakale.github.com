@@ -1,7 +1,7 @@
 body{
     margin: auto;
     width: 800px;
-    background-color: bisque;
+    background-color: rgb(255, 239, 219);
     color: rgb(59, 59, 121);
 }
 
@@ -13,4 +13,7 @@ section{
     margin: 10px;
     padding: 10px;
     border: 1px black solid;
+}
+img{
+    margin: 20px;
 }
