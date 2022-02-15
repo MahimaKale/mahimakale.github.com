@@ -1,6 +1,8 @@
 body{
-    margin: 20px;
+    margin: auto;
     width: 800px;
+    background-color: bisque;
+    color: rgb(59, 59, 121);
 }
 
 .plus{
