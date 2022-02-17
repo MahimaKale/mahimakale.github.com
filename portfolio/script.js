@@ -1,7 +1,7 @@
 (function(){
     'use strict';
     console.log('reading js');
-
+    // AOS.init();
 
     const overone = document.querySelector(".one");
     const overtwo = document.querySelector(".two");
