@@ -7,6 +7,8 @@
         color: "#ffffff"
     })
 
+    alert("Hello!, Thank you for being my user tester :) This will be a quick test to determine the quality of the website and not a test on your abilities. Please do the following tasks: 1. Find info button, 2.Go through timeline, 3. Add what you think a racist idea is?");
+
     // const back = document.querySelector('#back');
 
 // back.addEventListener('click',function(){

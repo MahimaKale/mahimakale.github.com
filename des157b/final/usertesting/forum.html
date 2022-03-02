@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Forum</title>
+    <script  src="scriptf.js" defer ></script>
+    <!-- cursor -->   <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <!-- cursor -->  <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <!-- fontawesome --><script src="https://kit.fontawesome.com/10b06dad91.js" crossorigin="anonymous"></script>
+<!-- back4app: parse library -->
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    
+
+
+
+</head>
+<body>
+    <!-- https://www.youtube.com/watch?v=NxVCq4p0Kb0 -->
+    <nav>
+        <ul>
+           <li id="chat"> <a href="forum.html"><i class="fas fa-comments"></i></a></li>
+            <li id="info"><a href="#"><i class="fas fa-question"></i></a></li>
+        </ul>
+        <div class="back"><i class="fa-solid fa-arrow-left"></i></div>
+        <section id="overlay_info">
+            <section id="inside">
+            <button>Close</button>
+            <p>The aim of this website is to start a conversation about race and what a racist idea is. It shows a <a href="home.html">historical timeline</a> for how the construct of race is woven into the roots of the making of America.</p><br>
+            <p>The historical timeline is studied and inspired from the book <i>Stamped from the Beginning</i>, written by Ibram X.Kendi.</p><br>
+            <p>We want to here your thoughts. Submit a response of what you think about the construct of race or what you think a racists idea is <a href="forum.html">here</a></p>
+            </section>
+          </section>
+    </nav>
+    <section id="share">
+        <h2>Share and Construct your Future!</h2>
+        <p>Add your ideas and thoughts about race or racist ideas. Do you think race is a social or political or cultural construct? Share your experience/s. </p>   
+        <div id="add"><a><i class="fas fa-plus"></i></a></div>
+    </section>
+    <section id="container">
+        <!-- <div class="story"><blockquote>Race is a socially, politically and academically construct created to divide people on a hierarchal system /caste system based on physical traits , perceived intellectual abilities and stereotypical emotional observations.</blockquote></div>
+
+        <div><blockquote>It’s a division of human beings based on their place of origin or colour, things that aren’t really in their control</blockquote> </div>
+
+        <div><blockquote>Race is the manmade concept used to separate groups of people based on physical, cultural, and/or geographic attributes.</blockquote></div>
+
+        <div><blockquote><i class="fas fa-quote-left"></i>Race is the identity of a person depending on their physical region or ethnic background. It is something we are born with, not something we acquire.<i class="fas fa-quote-right"></i></blockquote></div>
+
+        <div><blockquote>A racist idea is one that advocates treating people differently because of their race. It is not showing respect to an individual's skills, qualifications, and character, just because they are of a particular race.</blockquote></div>
+
+        <div><blockquote>A racist idea is any idea that suggests one racial group is inferior to or superior to another racial group in any way</blockquote>
+        </div>
+        
+        <div><blockquote>Discrimination or unfair behaviour on the basis of race would be racism.
+        </blockquote></div> -->
+    </section>
+    <section id="form">
+        <form id="actualform">
+            <div id="formback"><i class="fa-solid fa-arrow-left"></i></div>
+
+            <label for="story">What do you think race is?</label><br>
+            <textarea id="story" maxlength="400" spellcheck="value" name="text" rows="5" cols="33"></textarea>
+            <input type="submit" value="Submit">
+
+        </form>
+        <p>Maximum 400 characters</p>
+        <!-- <div class="submit">
+            <button id="btn">Submit</button>
+        </div> -->
+    </section>
+
+    
+</body>
+</html>
