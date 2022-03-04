@@ -2,16 +2,22 @@ body{
     margin: auto;
     width: 800px;
     color: rgb(59, 59, 121);
+    border: 1px black solid;
+
 }
 
 .plus{
     padding-left: 40px;
 }
 
+h1{
+    padding: 20px;
+}
+
 section{
     margin: 10px;
     padding: 10px;
-    border: 1px black solid;
+    width: 500px;
 }
 img{
     margin: 20px;
