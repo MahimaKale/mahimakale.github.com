@@ -600,7 +600,6 @@ nav ul {
 #container div:nth-child(4n)::before{
   content: "\201c";
   font-size: 100px;
-  color: aliceblue(55,61,114,1);
   display: block;
   margin-bottom: -80px;
   margin-top: -20px;
@@ -608,9 +607,7 @@ nav ul {
 #container div:nth-child(4n)::after{
   content: "\201d";
   font-size: 100px;
-  color: aliceblue(55,61,114,1);
   display: block;
-  align-items: right;
   margin-bottom: -80px;
   margin-top: -20px;
   margin-left: 90%;
