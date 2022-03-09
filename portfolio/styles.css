@@ -701,3 +701,7 @@ h4 a{
 h4:last-of-type {
     margin-bottom: 100px;
 }
+
+#video{
+    width: 70vw;
+}
