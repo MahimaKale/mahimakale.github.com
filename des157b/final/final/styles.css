@@ -88,7 +88,7 @@
 }
   
 nav ul li {
-    color: aliceblue(55,61,114,1);
+    color: aliceblue;
     list-style: none;
     margin: 15px;
     padding: 15px;
@@ -455,7 +455,7 @@ nav ul {
     float: left;
   }
   
-  #issues li.selected img {
+  /* #issues li.selected img {
     transform: scale(1.1, 1.1);
   }
   
@@ -464,13 +464,13 @@ nav ul {
     margin: 10px 30px 10px 50px;
     background: transparent;
     
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF); */
     /* IE 6 & 7 */
     
-    zoom: 1;
+    /* zoom: 1;
     transition: all 2s ease-in-out;
     transform: scale(0.7, 0.7);
-  }
+  } */
   
   #issues li h1 {
     color: #ffcc00;
@@ -586,37 +586,35 @@ nav ul {
 }
 
 #container div:nth-child(4n){
-    flex: 100%;
-    background-color: transparent;
-    color: rgba(55,61,114,1);
-    box-shadow: none;
-    font-size: 25px;
-    justify-content: space-around;
-    height: fit-content;
-    padding: 20px 100px 20px 100px;
-    quotes: "'";
-    font-style: italic;
+  flex: 100%;
+  background-color: transparent;
+  color: rgba(55,61,114,1);
+  box-shadow: none;
+  font-size: 25px;
+  justify-content: space-around;
+  height: fit-content;
+  padding: 20px 100px 20px 100px;
+  font-style: italic;
 }
 
 #container div:nth-child(4n)::before{
-    content: "\201c";
-    font-size: 100px;
-    color: aliceblue(55,61,114,1);
-    display: block;
-    margin-bottom: -80px;
-    margin-top: -20px;
+  content: "\201c";
+  font-size: 100px;
+  color: aliceblue(55,61,114,1);
+  display: block;
+  margin-bottom: -80px;
+  margin-top: -20px;
 }
 #container div:nth-child(4n)::after{
-    content: "\201d";
-    font-size: 100px;
-    color: aliceblue(55,61,114,1);
-    display: block;
-    align-items: right;
-    margin-bottom: -80px;
-    margin-top: -20px;
-    margin-left: 90%;
+  content: "\201d";
+  font-size: 100px;
+  color: aliceblue(55,61,114,1);
+  display: block;
+  align-items: right;
+  margin-bottom: -80px;
+  margin-top: -20px;
+  margin-left: 90%;
 }
-
 .container{
     margin:  30px auto;
     background-color: #b4b9e7;
