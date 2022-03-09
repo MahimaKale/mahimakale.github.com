@@ -315,7 +315,7 @@ main{
 main p{
     margin: 0 auto;
     flex: 100%;
-    justify-content: left;
+    justify-content: center;
     font-family: 'Josefin Sans', sans-serif;  
     font-size: 18px;
     border-left: rgb(230, 113, 113) 25px solid;
@@ -682,6 +682,22 @@ main p{
     }
 }
 
+#figma{
+    bottom: -1100px;
+    left: 0;
+    padding: 50px;
+}
 
+h4{
+    font-family: 'Josefin Sans', sans-serif; 
 
+    font-size: 25px;
+}
 
+h4 a{
+    color: rgb(252, 141, 174);
+}
+
+h4:last-of-type {
+    margin-bottom: 100px;
+}
