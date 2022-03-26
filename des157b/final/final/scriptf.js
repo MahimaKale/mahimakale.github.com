@@ -18,9 +18,13 @@
     const add = document.getElementById('add');
     const form = document.getElementById('form');
     const submitForm = document.getElementById('actualform');
+    const view = document.getElementById('view');
+    const texta = document.getElementById('story');
+    const area = document.getElementById('area');
+    const subs = document.getElementById('subs');
     const backform = document.getElementById('formback');
     // const submit = document.querySelector('');
-    const inputs = document.querySelectorAll('#actualform textarea:not([type=submit])')
+    const inputs = document.querySelectorAll('#actualform textarea:not([type=submit])');
     const inputList = document.querySelector('#container');
     const body = document.querySelector('body');
 
@@ -52,28 +56,56 @@
     displayInput();
 
 
+    view.addEventListener('click',function(event){
+        event.preventDefault();
+        form.style.left = '-20000px';
+        area.style.height = "0";
+        area.style.opacity = "0";
+        texta.style.height = "0px";
+        texta.style.width = "0px";
+        subs.style.opacity = "1";
+
+    })
     
+    subs.addEventListener('click',function(event){
+        event.preventDefault();
+        area.style.height = "200px";
+        area.style.opacity = "1";
+        texta.style.height = "150px";
+        texta.style.width = "400px";
+        subs.style.opacity = "0";
+
+    })
 
     add.addEventListener('click',function(event){
         event.preventDefault();
         form.style.left = '0px';
+        subs.style.opacity = "1";
     })
 
     backform.addEventListener('click',function(event){
         event.preventDefault();
-
         form.style.left = '-20000px';
+        area.style.height = "0";
+        area.style.opacity = "0";
+        texta.style.height = "0px";
+        texta.style.width = "0px";
+        subs.style.opacity = "1";
+
     })
 
     submitForm.addEventListener('submit',function(event){
         event.preventDefault();
         console.log('done');
         form.style.left = '-20000px';
+        area.style.height = "0";
+        area.style.opacity = "0";
+        texta.style.height = "0px";
+        texta.style.width = "0px";
+        subs.style.opacity = "1";
         addInput();
-        
-        document.querySelector("#form form").reset();
-
-        
+    
+        document.querySelector("#form form").reset();    
     });
 
     async function addInput(){

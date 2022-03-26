@@ -75,17 +75,16 @@
 #overlay_info button:hover{
   background-color: rgba(55,61,114,1);
   color: white;
-
 }
   
-#home a{
+/* #home a{
     text-decoration: none;
     color: aliceblue;
 }
 
 #home a:hover{
     color: #F5E0B5;
-}
+} */
   
 nav ul li {
     color: aliceblue;
@@ -110,7 +109,7 @@ nav ul li a {
     text-decoration: none;
     color:rgba(55,61,114,1) ;
     font-family: 'Times New Roman', Times, serif;
-    /* color: #F5E0B5; */
+    color: aliceblue;
 }
 
 nav ul li a:hover{
@@ -347,10 +346,11 @@ nav ul {
 
 .scroll{
   position: absolute;
-  top: 670px;
+  bottom: 0;
   left: 50%;
   text-align: center;
   font-size: 60px;
+  margin-bottom: -10px;
   animation: blink 5s infinite ease-in-out;
 }
 
@@ -515,7 +515,7 @@ nav ul {
 
 /* share page */
 #share{
-    margin: 20px 100px;
+    margin: 20px 150px;
     /* margin-left: 100px; */
 }
 #share h2{
@@ -535,28 +535,30 @@ nav ul {
 #add{
     position: absolute;
     background-color: #F5E0B5;
+    color: rgba(55,61,114,1);
     box-shadow: 1px 1px 5px black;
-    background: radial-gradient(circle, #F5E0B5 60%, rgba(0,0,0,1) 100%);    
-    border-radius: 50%;
-    padding: 10px;
-    height: 50px;
-    width: 50px;
+    background: radial-gradient(circle, #F5E0B5 50%, rgba(0,0,0,1) 150%);    
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    width: fit-content;
     text-align: center;
-    font-size:45px; 
+    font-size:16px; 
     top: 130px;
     left: 70vw;
 }
 
 #add a{
     color: rgba(55,61,114,1);
-
 }
 
 #add:hover{
-    background: radial-gradient(circle, aliceblue 4%, rgba(0,0,0,1) 100%);    
+    background: radial-gradient(circle, aliceblue 4%, rgba(0,0,0,1) 150%);    
     color: #F5E0B5;
     box-shadow: 1px 1px 10px white;
 }
+
+
 
 /* display area */
 #container{
@@ -603,6 +605,7 @@ nav ul {
   display: block;
   margin-bottom: -80px;
   margin-top: -20px;
+  padding-bottom: 10px;
 }
 #container div:nth-child(4n)::after{
   content: "\201d";
@@ -611,6 +614,7 @@ nav ul {
   margin-bottom: -80px;
   margin-top: -20px;
   margin-left: 90%;
+  padding-top: 10px;
 }
 .container{
     margin:  30px auto;
@@ -646,20 +650,70 @@ form{
     text-align: center;
     font-size: 60px;
     padding: 200px 0 0 0;
-    transition: ease-in-out;
+    transition: 1s ease-in-out;
     top: 0;
-    left: -20000px;
+    left: 0px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px black;
 }
 textarea{
     width: 400px;
-    height: 200px;
+    height: 0;
     margin: 10px;
 }
+
+#marg{
+  margin-top: 20px;
+}
+
 #form p{
     color: rgba(55,61,114,1);
     font-size: 12px;
+}
+
+#buttons input{
+  background-color: #F5E0B5;
+  color: rgba(55,61,114,1);
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+#buttons input:hover{
+  background: radial-gradient(circle, aliceblue 55%, rgba(0,0,0,1) 150%);    
+  box-shadow: 1px 1px 10px black;
+}
+
+#area{
+  position: relative;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  margin-left: 35vw;
+}
+
+#area p{
+  width: 200px;
+}
+
+#area textarea {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #000;
+  padding: 10px;
+}
+
+#area input{
+  position: absolute;
+  background-color: rgba(55,61,114,1);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  left: 350px;
+  bottom: -20px;
 }
 
 #words{
