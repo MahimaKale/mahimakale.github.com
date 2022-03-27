@@ -367,7 +367,7 @@ nav ul {
 /* timeline stuff below */
 
 #title{
-    margin: 50px;
+    margin: 50px 50px 20px 50px;
     font-size: 40px;
 }
   a {
@@ -407,7 +407,7 @@ nav ul {
     /* background: radial-gradient(circle, rgba(55,61,114,1) 4%, rgba(0,0,0,1) 100%);   */
     /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.548); */
     width: 80vw;
-    height: 85vh;
+    height: 90vh;
     overflow: hidden;
     margin: 20px auto 0 auto;
     position: relative;
@@ -444,13 +444,13 @@ nav ul {
   
   #issues {
     width: 800px;
-    height: 500px !important;
+    height: 600px !important;
     /* overflow: hidden; */
   }
   
   #issues li {
     width: 800px;
-    height: 400px;
+    height: 600px;
     list-style: none;
     float: left;
   }
@@ -472,6 +472,13 @@ nav ul {
     transform: scale(0.7, 0.7);
   } */
   
+  #concise{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 550px;
+    font-size: 14px;
+  }
   #issues li h1 {
     color: #ffcc00;
     font-size: 48px;
@@ -486,7 +493,7 @@ nav ul {
     margin-right: 70px;
     margin-left: 80px;
     font-weight: normal;
-    line-height: 24px;
+    line-height: 28px;
     text-shadow: #000 1px 1px 2px;
   }
   .question{
@@ -751,7 +758,7 @@ textarea{
     text-align: center;
     width: 350px;
     padding: 20px;
-    margin: 40px 30vw 40px 35vw;
+    margin: 80px 30vw 40px 35vw;
     font-size: 30px;
     border-radius: 20px;
 }
